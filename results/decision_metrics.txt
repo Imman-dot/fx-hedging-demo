@@ -1,0 +1,7 @@
+
+--- Decision Metrics ---
+Forward cost (locked): £1,162,791
+Option max cost (if EUR > 0.86): £1,186,320
+Option min cost in our grid: £1,076,161
+Option vs Forward breakeven rate (below strike): EUR/GBP ≈ 0.8778
+Interpretation: If future EUR/GBP falls below the breakeven, the option (with premium) beats the forward; otherwise the forward is cheaper.
