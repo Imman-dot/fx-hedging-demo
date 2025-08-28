@@ -113,3 +113,24 @@ Next, I plan to:
 - Replace fixed premium with **Garman–Kohlhagen option pricing**.  
 - Extend to more complex hedging portfolios (multiple currencies).  
 - Add Monte Carlo simulation to model distributions of hedging costs.  
+
+## Results
+
+**Decision Metrics**
+- Forward cost (locked): £1,162,791  
+- Option max cost: £1,186,320  
+- Option min cost (grid): £1,076,161  
+- Breakeven (Option vs Forward): 0.8778 EUR/GBP  
+
+**Payoff Table (excerpt)**
+
+| EUR/GBP in 3m | No Hedge (GBP) | Forward Hedge (GBP) | Option Hedge (GBP) |
+|---------------|----------------|----------------------|---------------------|
+| 0.80          | 1,250,000      | 1,162,791            | 1,273,529           |
+| 0.85          | 1,176,471      | 1,162,791            | 1,200,000           |
+| 0.90          | 1,111,111      | 1,162,791            | 1,186,320           |
+| 0.95          | 1,052,632      | 1,162,791            | 1,186,320           |
+
+*(full CSV in `results/payoff_table.csv`)*
+
+![Hedging Strategies Chart](results/hedging_comparison.png)
